@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*BARRA DE NAVEGACIÓN*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 25px;
+    padding: 0 15% 0 10%;
+    overflow: hidden;
+    background-color: rgb(18, 0, 59);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.4;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(233, 233, 0);
+    color: white;
+}
+
+
+/*Header*/
+
+.header {
+    background-image: url('../img/banner.png');
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 4.5vw;
+    color: #000000;
+}
+
+.header h2 {
+    font-size: 3vw;
+}
+
+.header h3 {
+    font-size: 2vw;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -- Clases de columnas -- */
+
+.one-column {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.two-column {
+    padding: 2%;
+    float: left;
+    width: 50%;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+    align: center;
+    float: left;
+}
+
+
+/*TABLAS*/
+
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    background-color: #4c00ff;
+    color: white;
+}
+
+#padding-table {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+#padding-table h1 {
+    text-align: center;
+    font-size: 5vw;
+}
+
+
+/*SECCIONES*/
+
+#tempo {
+    align: center;
+}
+
+#section-1 {
+    background-color: #0a0061;
+    color: white;
+}
+
+#section-2 {
+    background-color: #0f0099;
+    align-content: center;
+    color: white;
+}
+
+#section-2 img {
+    box-align: center;
+    padding: 15% 2% 5% 2%;
+}
+
+#section-3 {
+    background-color: white;
+    color: black;
+    padding-top: 0% 3% 3% 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section-5 {
+    background-color: #46a6fc;
+}
+
+#footer {
+    color: black;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+#footer img {
+    width: 25%;
+}
+
+#footer p a {
+    text-decoration: none;
+}
+
+#footerb {
+    background-color: rgb(189, 189, 189);
+}
+
+#platinum-label {
+    width: 18%;
+}
+
+#platinum-label2 {
+    width: 18%;
+    padding: 400px;
+}
+
+
+/*Clases auxiliares*/
+
+.padding-0 {
+    padding: 0px;
+}
+
+#paddingnoimg {
+    padding: 10%;
+}
+
+#youtube {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-widht:700px) {
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 100%;
+    }
+    li a {
+        font-size: 2.5vw;
+        width: 100%;
+    }
+    ul {
+        width: 100%;
+        padding: 0px;
+    }
+    #youtube {
+        width: 100%;
+    }
+    #section-1 {
+        width: 100%;
+    }
+}
