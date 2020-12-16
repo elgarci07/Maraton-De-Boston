@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     /* font */
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Andika New Basic', sans-serif;
 }
 
 body {
@@ -18,38 +18,77 @@ html {
     scroll-behavior: smooth;
 }
 
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 /*BARRA DE NAVEGACIÓN*/
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    font-size: 25px;
-    padding: 0 15% 0 10%;
-    overflow: hidden;
-    background-color: rgb(18, 0, 59);
+div.scrollmenu {
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+    white-space: nowrap;
     position: fixed;
-    top: 0;
     width: 100%;
-    transition: 0.4;
 }
 
-li {
-    float: left;
-    width: 25%;
-}
-
-li a {
-    display: block;
-    color: gray;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgb(233, 233, 0);
+div.scrollmenu a {
+    display: inline-block;
     color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    width: 16.66%;
+    font-size: 25px;
+}
+
+div.scrollmenu a:hover {
+    background-color: rgb(200, 255, 0);
+    color: black;
+}
+
+.padding87 {
+    padding: 25px;
+}
+
+
+/*CLASES CONTADOR ATRAS*/
+
+#cuenta {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    padding-bottom: 1%;
+    background-color: #0f0099;
+}
+
+.simply-section {
+    background-color: rgb(255, 255, 255);
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.simply-amount {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word {
+    font-weight: 200;
+    font-size: 20px;
 }
 
 
@@ -58,26 +97,18 @@ li a:hover {
 .header {
     background-image: url('../img/banner.png');
     text-align: center;
-    padding: 20px;
-    width: 100%;
+    padding: 7vw;
+    background-size: cover;
+    background-color: white;
 }
 
 .header h1 {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     color: #000000;
-}
-
-.header h2 {
-    font-size: 3vw;
-}
-
-.header h3 {
-    font-size: 2vw;
 }
 
 .header img {
     width: 100%;
-    height: 100%;
 }
 
 
@@ -91,7 +122,6 @@ li a:hover {
 
 .one-column h1 {
     font-size: 5vw;
-    text-align: center;
 }
 
 .two-column {
@@ -128,6 +158,14 @@ li a:hover {
     float: left;
 }
 
+.mapa {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5vw;
+    text-align: center;
+}
+
 
 /*TABLAS*/
 
@@ -154,7 +192,7 @@ li a:hover {
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: left;
-    background-color: #4c00ff;
+    background-color: #3503aa;
     color: white;
 }
 
@@ -170,6 +208,10 @@ li a:hover {
     font-size: 5vw;
 }
 
+.photo {
+    text-align: center;
+}
+
 
 /*SECCIONES*/
 
@@ -178,6 +220,11 @@ li a:hover {
 }
 
 #section-1 {
+    background-color: #0a0061;
+    color: white;
+}
+
+#redes {
     background-color: #0a0061;
     color: white;
 }
@@ -199,6 +246,7 @@ li a:hover {
     padding-top: 0% 3% 3% 3%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 #section-5 {
@@ -235,6 +283,31 @@ li a:hover {
     padding: 400px;
 }
 
+#racestart {
+    background-color: #0a0061;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*BODY & ROW*/
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*BIENVENIDA*/
+
 
 /*Clases auxiliares*/
 
@@ -251,10 +324,28 @@ li a:hover {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5%;
+    width: 70%;
+    height: 35vw;
 }
 
+#discordlogo {
+    width: 100%;
+}
 
-/* Clear floats after the columns */
+.two-column iframe {
+    width: 100%;
+    height: 34vw;
+}
+
+#boton {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0a0061;
+    color: white;
+}
 
 .row:after {
     content: "";
@@ -262,28 +353,98 @@ li a:hover {
     clear: both;
 }
 
+#infografia {
+    width: 100%;
+    align: center;
+    font-size: 3vw;
+    background-color: #0a0061;
+    color: white;
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
-@media screen and (max-widht:700px) {
+@media screen and (max-width:850px) {
     .two-column {
         width: 100%;
     }
     .four-column {
         width: 100%;
     }
-    li a {
-        font-size: 2.5vw;
+    .four-column img {
         width: 100%;
-    }
-    ul {
-        width: 100%;
-        padding: 0px;
+        text-align: center;
     }
     #youtube {
         width: 100%;
     }
     #section-1 {
+        width: 100%;
+    }
+    #discord {
+        width: 80%;
+    }
+    .header {
+        width: 100%;
+        font-size: 2.5vw;
+    }
+    /*Contador*/
+    #cuenta {
+        display: flex;
+        justify-content: center;
+        padding: 4%;
+        padding-bottom: 5%;
+    }
+    .simply-section {
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        height: 80px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    .simply-amount {
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .simply-word {
+        font-weight: 200;
+        font-size: 12px;
+    }
+    #infografia {
+        width: 100%;
+        align: center;
+        font-size: 4vw;
+    }
+    /*BARRA DE NAVEGACIÓN*/
+    div.scrollmenu {
+        background-color: rgb(0, 0, 0);
+        overflow: auto;
+        white-space: nowrap;
+        position: fixed;
+        width: 100%;
+    }
+    div.scrollmenu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 3%;
+        text-decoration: none;
+        width: 13.4%;
+        font-size: 10px;
+    }
+    div.scrollmenu a:hover {
+        background-color: rgb(200, 255, 0);
+        color: black;
+    }
+    .padding87 {
+        padding: 20px;
+    }
+    #platinum-label {
         width: 100%;
     }
 }
